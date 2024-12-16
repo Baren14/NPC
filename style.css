@@ -1,4 +1,10 @@
 body{
-    background-color:antiquewhite;
+    background: linear-gradient(to right, antiquewhite, white);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: sans-serif;
+}
+#current_note{
+    border-style: solid;
+    border-color: black;
 }

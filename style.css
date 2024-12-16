@@ -1,3 +1,6 @@
+h1{
+    margin-left: 10px;
+}
 body{
     background: linear-gradient(to right, antiquewhite, white);
     background-repeat: no-repeat;
@@ -5,13 +8,17 @@ body{
     font-family: sans-serif;
 }
 #current_note{
+    margin: 10px;
     border-style: solid;
     border-color: black;
     font-size: large;
-    width: 900px;
-    height:600px;
+    width: 60vw;
+    height:60vh;
+    resize: none;
 }
 button{
+    margin: 5px;
+    margin-left: 10px;
     background-color: white;
     border-color: black;
     border-style: solid;

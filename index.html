@@ -17,5 +17,35 @@
         <label id="saved_notes">Saved Notes</label>
     </div>
     <button id="save" onclick="save()">Save</button>
+    <br><br>
+    <div id = "Calculator">
+        <input id = "screen" readonly>
+        <div id = "calculatorButton">
+            <button id = "1" onclick = "addValue('1')">1</button>
+            <button id = "2" onclick = "addValue('2')">2</button>
+            <button id = "3" onclick = "addValue('3')">3</button>
+            <button id = "+" onclick = "addValue('+')">+</button>
+            <button id = "4" onclick = "addValue('4')">4</button>
+            <button id = "5" onclick = "addValue('5')">5</button>
+            <button id = "6" onclick = "addValue('6')">6</button>
+            <button id = "-" onclick = "addValue('-')">-</button>
+            <button id = "7" onclick = "addValue('7')">7</button>
+            <button id = "8" onclick = "addValue('8')">8</button>
+            <button id = "9" onclick = "addValue('9')">9</button>
+            <button id = "*" onclick = "addValue('*')">*</button>
+            <button id = "0" onclick = "addValue('0')">0</button>
+            <button id = "." onclick = "addValue('.')">.</button>
+            <button id = "equal" onclick = "equal()">=</button>
+            <button id = "/" onclick = "addValue('/')">/</button>
+            <button id = "clear" onclick = "clearScreen()">c</button>
+            <button id = "backspace" onclick = "backspace()"><-</button>
+        </div>
+    </div>
+    <div id="hideButton">
+        <button id="open_close">Open Calculator</button>
+    </div>
 </body>
+<footer>
+    <script src="calculator.js"></script>
+</footer>
 </html>

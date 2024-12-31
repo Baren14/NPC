@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saved Notes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Saved Notes</h1>
+    <div id="notes_container">
+      <!-- Saved notes will be dynamically inserted here -->
+    </div>
+    <button id="back" onclick="goBack()">Back to Notepad</button>
+    <button id="add">new note</button>
+    <button id="delete">delete note</button>
+  </body>
+
+  <footer>
+    <script src="saved_notes.js"></script>
+  </footer>
+  <textarea type="text" id="current_note"></textarea>
+</html>

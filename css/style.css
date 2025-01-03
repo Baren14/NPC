@@ -6,6 +6,10 @@ body {
   overflow-x: hidden;
 }
 
+table, th, td {
+  border: 1px solid black;
+}
+
 .layout_padding {
   padding: 90px 0;
 }

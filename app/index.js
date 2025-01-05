@@ -32,3 +32,18 @@ function load_list(){
                 noteList.appendChild(noteItem);
             });
 }
+
+function loadNoteById(noteId) {
+    const notes = JSON.parse(localStorage.getItem(storageKey)) || [];
+    const note = notes.find(n => n.id === noteId);
+    if (note) {
+        document.getElementById('noteArea').value = note.content;
+        alert(`Note loaded (Saved: ${new Date(note.timestamp).toLocaleString()})`);
+    } else {
+        alert('Note not found!');
+    }
+}
+
+function clearNoteArea() {
+    document.getElementById('noteArea').value = '';
+}

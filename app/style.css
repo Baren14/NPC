@@ -43,3 +43,27 @@ button{
     font-size: large;
     color: buttontext;
 }
+
+#Calculator{
+    border-style: solid;
+    border-radius: 5px;
+    width: 210px;
+    background-color: gray;
+    position: absolute;
+    right: 10vw;
+    top: 200px;
+}
+
+#screen{
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 206px;
+    border-style: none;
+}
+
+.calcbutton{
+    width: 40px;
+    margin:1px;
+    background-color:gold;
+}

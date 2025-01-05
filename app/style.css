@@ -78,6 +78,12 @@ button{
     background-color:gold;
 }
 
+.delete-button{
+    position: absolute;
+    left: 600px;
+    margin-top: -2px;
+}
+
 /*mobile responsive*/
 @media screen and (max-width: 768px) {
     #Calculator {

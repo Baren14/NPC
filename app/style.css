@@ -34,6 +34,14 @@ button{
     border-width: 2px;
 }*/
 
+.note-item{
+    cursor: pointer;
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
 #back{
     margin: 5px;
     margin-left: 10px;

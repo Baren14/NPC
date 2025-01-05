@@ -15,7 +15,6 @@ function save(){
             notes.push(note);
             localStorage.setItem(storageKey, JSON.stringify(notes));
             document.getElementById('current_note').value = '';
-            load_list();
             alert('Note saved!');
 }
 
@@ -33,17 +32,23 @@ function load_list(){
             });
 }
 
+
 function loadNoteById(noteId) {
     const notes = JSON.parse(localStorage.getItem(storageKey)) || [];
     const note = notes.find(n => n.id === noteId);
     if (note) {
-        document.getElementById('noteArea').value = note.content;
-        alert(`Note loaded (Saved: ${new Date(note.timestamp).toLocaleString()})`);
+        localStorage.setItem('currentNote', note.content);
+        window.location.href = "index.html";
     } else {
         alert('Note not found!');
     }
 }
 
-function clearNoteArea() {
-    document.getElementById('noteArea').value = '';
-}
+document.addEventListener('DOMContentLoaded', () => {
+    // Load the note content if available
+    const currentNote = localStorage.getItem('currentNote');
+    if (currentNote) {
+        document.getElementById('current_note').value = currentNote;
+        localStorage.removeItem('currentNote'); // Clear the temporary storage
+    }
+});

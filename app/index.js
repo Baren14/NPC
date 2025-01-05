@@ -14,7 +14,6 @@ function save(){
             const note = { id: Date.now(), content: note_content, timestamp: new Date().toISOString() };
             notes.push(note);
             localStorage.setItem(storageKey, JSON.stringify(notes));
-            document.getElementById('current_note').value = '';
             alert('Note saved!');
 }
 

@@ -73,13 +73,23 @@ button{
 }
 
 .delete-button{
-    position: absolute;
-    left: 600px;
+    position: relative;
+    left: 10vw;
     margin-top: -2px;
 }
 
 /*mobile responsive*/
 @media screen and (max-width: 768px) {
+    #notes_container{
+        width: 100%;
+        margin: 0px;
+    }
+
+    .delete-button{
+        position:relative;
+        left: 75vw;
+    }
+
     #Calculator {
         position: absolute;
         top: 650px;

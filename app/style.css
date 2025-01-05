@@ -26,13 +26,7 @@ button{
     resize: none;
     background-color: white;
 }
-/*#saved_notes{
-    margin-top: 50vh;
-    margin-left: auto;
-    border-style: solid;
-    border-color:black;
-    border-width: 2px;
-}*/
+
 
 .note-item{
     cursor: pointer;
@@ -99,7 +93,7 @@ button{
 
     #saved_notes{
         position:absolute;
-        top: 620px;
-        left:20px;
+        top: 610px;
+        left:10px;
     }
 }

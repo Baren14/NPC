@@ -70,3 +70,11 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.removeItem('currentNote'); // Clear the temporary storage
     }
 });
+
+function back(){
+    location.replace('index.html');
+}
+
+function saved_page(){
+    location.replace('save.html');
+}

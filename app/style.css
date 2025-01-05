@@ -25,13 +25,13 @@ button{
     height:60vh;
     resize: none;
 }
-#saved_notes{
+/*#saved_notes{
     margin-top: 50vh;
     margin-left: auto;
     border-style: solid;
     border-color:black;
     border-width: 2px;
-}
+}*/
 
 #back{
     margin: 5px;
@@ -80,5 +80,11 @@ button{
 
     body{
         height: 1600px;
+    }
+
+    #saved_notes{
+        position:absolute;
+        top: 620px;
+        left:20px;
     }
 }

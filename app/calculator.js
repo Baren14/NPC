@@ -43,3 +43,9 @@ myButton.addEventListener("click", () => {
         myButton.textContent = "Open Calculator";
     }
 });
+
+function hide_calc(){
+    myCalculator.style.display = "none";
+}
+
+document.addEventListener('DOMContentLoaded', hide_calc);

@@ -47,7 +47,7 @@ function loadNoteById(noteId) {
     const note = notes.find(n => n.id === noteId);
     if (note) {
         localStorage.setItem('currentNote', note.content);
-        window.location.href = "index.html";
+        window.location.replace('index.html');
     } else {
         alert('Note not found!');
     }

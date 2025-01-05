@@ -1089,6 +1089,56 @@ a:focus {
   }
 }
 
+/*About Us pg start*/
+.team-section {
+  padding: 40px 20px;
+}
+
+.team-grid {
+  display: flex;
+  flex-direction: column; /* Stack rows of team members */
+  gap: 20px; /* Spacing between rows */
+}
+
+.team-member {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align items closer together */
+  gap: 10px; /* Reduced space between the photo and text */
+}
+
+.team-photo {
+  width: 120px; /* Adjust image size */
+  height: 120px;
+  border-radius: 50%; /* Make it circular */
+  object-fit: cover;
+}
+
+.member-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.member-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #ffe601;
+}
+
+.member-role {
+  font-size: 16px;
+  color: #ffe601;
+}
+
+/* Adjust alternating alignment */
+.team-member:nth-child(even) {
+  flex-direction: row-reverse; /* Flip layout for even members */
+}
+/*About Us pg end*/
+
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap");
 
 *,

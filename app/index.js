@@ -22,7 +22,7 @@ function save(){
 //loading note list
 function load_list(){
     const notes = JSON.parse(localStorage.getItem(storageKey)) || [];
-            const noteList = document.getElementById('saved_notes');
+            const noteList = document.getElementById('list');
             noteList.innerHTML = '';
             notes.forEach(note => {
                 const noteItem = document.createElement('div');

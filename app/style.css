@@ -32,3 +32,14 @@ button{
     border-color:black;
     border-width: 2px;
 }
+
+#back{
+    margin: 5px;
+    margin-left: 10px;
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    border-radius: 6px;
+    font-size: large;
+    color: buttontext;
+}

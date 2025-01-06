@@ -47,30 +47,63 @@ button{
     color: buttontext;
 }
 
-#Calculator{
-    border-style: solid;
-    border-radius: 5px;
-    width: 210px;
-    height: 200px;
-    background-color: gray;
+#Calculator {
+    border-radius: 10px;
+    width: 265px; /*265px normal version, 365px larger version*/
+    background-color: gray; 
+    padding: 10px;
     position: absolute;
-    right: 10vw;
-    top: 200px;
+    right: 10vw; /*10vw normal version, 5vw larger version*/
+    top: 100px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
 }
 
-#screen{
+#screen {
     background-color: black;
     color: white;
-    height: 30px;
-    width: 206px;
-    border-style: none;
+    height: 50px; 
+    width: 100%; 
+    border: none;
+    border-radius: 8px; 
+    font-size: 20px; 
+    text-align: right; 
+    padding: 10px; 
+    box-sizing: border-box;
 }
 
-.calcbutton{
-    width: 40px;
-    margin:1px;
-    background-color:gold;
+.calcbutton {
+    width: 50px; /*50px normal version, 70px larger version*/
+    height: 50px;
+    margin: 5px;
+    background-color: #ff8c00; 
+    border: none;
+    border-radius: 5px; 
+    font-size: 18px; 
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
 }
+
+.calcbutton:hover {
+    background-color: #ffa500; 
+}
+
+#calculatorButton {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px; 
+}
+
+#clear {
+    background-color: #d11a2a; 
+    grid-column: span 2; 
+}
+
+#equal {
+    background-color: #007bff; 
+    grid-column: span 2; 
+
 
 .delete-button{
     position: relative;

@@ -22,24 +22,28 @@
     <div id = "Calculator">
         <input id = "screen" readonly>
         <div id = "calculatorButton">
-            <button id = "1" class="calcbutton" onclick = "addValue('1')">1</button>
-            <button id = "2" class="calcbutton" onclick = "addValue('2')">2</button>
-            <button id = "3" class="calcbutton" onclick = "addValue('3')">3</button>
-            <button id = "+" class="calcbutton" onclick = "addValue('+')">+</button><br>
-            <button id = "4" class="calcbutton" onclick = "addValue('4')">4</button>
-            <button id = "5" class="calcbutton" onclick = "addValue('5')">5</button>
-            <button id = "6" class="calcbutton" onclick = "addValue('6')">6</button>
-            <button id = "-" class="calcbutton" onclick = "addValue('-')">-</button><br>
+            <button id = "clear" class="calcbutton" onclick = "clearScreen()">c</button>
+            <button id = "backspace" class="calcbutton" onclick = "backspace()"><-</button>
+            <button id = "/" class="calcbutton" onclick = "addValue('/')">/</button>
+
             <button id = "7" class="calcbutton" onclick = "addValue('7')">7</button>
             <button id = "8" class="calcbutton" onclick = "addValue('8')">8</button>
             <button id = "9" class="calcbutton" onclick = "addValue('9')">9</button>
-            <button id = "*" class="calcbutton" onclick = "addValue('*')">*</button><br>
+            <button id = "*" class="calcbutton" onclick = "addValue('*')">*</button>
+
+            <button id = "4" class="calcbutton" onclick = "addValue('4')">4</button>
+            <button id = "5" class="calcbutton" onclick = "addValue('5')">5</button>
+            <button id = "6" class="calcbutton" onclick = "addValue('6')">6</button>
+            <button id = "-" class="calcbutton" onclick = "addValue('-')">-</button>
+
+            <button id = "1" class="calcbutton" onclick = "addValue('1')">1</button>
+            <button id = "2" class="calcbutton" onclick = "addValue('2')">2</button>
+            <button id = "3" class="calcbutton" onclick = "addValue('3')">3</button>
+            <button id = "+" class="calcbutton" onclick = "addValue('+')">+</button>
+            
             <button id = "0" class="calcbutton" onclick = "addValue('0')">0</button>
             <button id = "." class="calcbutton" onclick = "addValue('.')">.</button>
             <button id = "equal" class="calcbutton" onclick = "equal()">=</button>
-            <button id = "/" class="calcbutton" onclick = "addValue('/')">/</button><br>
-            <button id = "clear" class="calcbutton" onclick = "clearScreen()">c</button>
-            <button id = "backspace" class="calcbutton" onclick = "backspace()"><-</button>
         </div>
     </div>
     

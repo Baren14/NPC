@@ -110,7 +110,7 @@ button{
     left: 10vw;
     margin-top: -2px;
 }
-
+}
 /*mobile responsive*/
 @media screen and (max-width: 768px) {
     #notes_container{
